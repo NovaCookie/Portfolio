@@ -2,31 +2,31 @@
     {
         "image": "Booki.png",
         "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "text": "La page d'accueil d'une agence de voyage faite en HTML & CSS",
         "link": "#"
     },
     {
-        "image": "PrintIt",
+        "image": "PrintIt.png",
         "title": "Print it!",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "text": "Premier projet pour débuter avec le langage JavaScript.",
         "link": "#"
     },
     {
-        "image": "",
-        "title": "Port folio de Sophie",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "image": "Sophie.png",
+        "title": "Portfolio de Sophie",
+        "text": "Voici une page web dynamique avec JavaScript un peu plus complexe",
+        "link": "https://github.com/NovaCookie/Projet7"
     },
     {
         "image": "Kasa.png",
         "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "text": "Application web de location immobilière avec la bibliothèque React",
+        "link": "https://github.com/NovaCookie/Projet8"
     },  
     {
-        "image": "",
+        "image": "AutomatisationTests.png",
         "title": "Automatisation de tests",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "text": "Premiers pas sur l'automatisation de tests avec le framework Cypress",
+        "link": "https://github.com/NovaCookie/Projet10"
     }
 ]

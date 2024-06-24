@@ -26,7 +26,7 @@
 .bgimage {
     height: 100vh;
     max-height: 900px;
-    background: url("images/image1.jpg");
+    background: url("images/backgroundHeader.jpg");
     background-size: cover;
     position: relative;
 }
