@@ -1,4 +1,35 @@
 /******* GENERAL *******/
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-3,900&display=swap');
+
+:root {
+    --blue: rgb(60, 60, 240);
+    --yellow: rgb(255, 192, 0);
+    --grey: #5b5b5b;
+}
+
+body {
+    background-color: rgb(20, 19, 19) !important;
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    font-variation-settings: "slnt" -3 !important;
+}
+/* transition*/
+
+.tourne{
+    transition: 2s;
+    rotate: 360deg;
+}
+.shadow{
+    transition: 0.5s;
+    text-shadow: 2px 4px black;
+}
+
+.grandi{
+    transition: 2;
+    scale: 1.3;
+}
 /* spacing on all sections */
 #about,
 #skills,
@@ -7,19 +38,49 @@
     margin-top: 4rem;
     padding-top: 4rem;
 }
-#about h2,
-#skills h2,
-#portfolio h2,
-#contact h2 {
-    margin-bottom: 3rem;
-}
-#contact {
-    padding-bottom: 4rem;
+
+#about,
+#skills,
+#portfolio {
+    h1 {
+        font-size: 100px;
+        color: var(--yellow)
+    }
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: 3rem;
+        color: var(--yellow)
+    }
+
 }
 
+#contact {
+    padding-bottom: 4rem;
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: 3rem;
+        color: white;
+    }
+}
+
+
 /* display background dark color on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: #5b5b5b;
+.navbarScroll {
+    background-color: var(--grey);
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand:hover,
+.nav-item:hover {
+    transition: 0.5s;
+    text-shadow: 2px 4px black;
+    scale: 1.3;
+    margin: auto 10px;
 }
 
 /* hero background image */
@@ -30,72 +91,96 @@
     background-size: cover;
     position: relative;
 }
+
 /* text css above hero image*/
 .hero_title {
-    font-size: 4.5rem;
+    font-weight: 800;
+    color: transparent;
+    font-size: 120px;
+    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    letter-spacing: -6px;
 }
+
 .hero_desc {
     font-size: 2rem;
+    color: white;
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
 }
 
 /* about */
-.imageAboutPage {
-    width: 100%;
+#about {
+    color: white;
+
+    .imageAboutPage {
+       width: 100%;
+       margin: 0;
+    }
+
 }
-.imageAboutPage {
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
+
 
 /* skills */
 .skillsText.card {
     height: 350px;
     cursor: pointer;
 }
+
 .skillsText img {
     width: 100%;
     height: 150px;
     object-fit: contain;
 }
+
 #skills p {
     text-align: center;
 }
+
 .skillsIcon {
     font-size: 36px;
     text-align: center;
     width: 100%;
 }
+
 .card-title {
     text-align: center;
-}
-.card:hover .skillsIcon {
-    color: #008000;
-}
-.skillsText:hover {
-    border: 1px solid #008000;
+    color: white;
 }
 
+
 /* portfolio */
-#portfolio p {
-    text-align: center;
+#portfolio {
+    p {
+        text-align: center;
+    }
+
+    .btn {
+        color: white;
+        background-color: var(--blue)
+    }
 }
 
 /* contact */
 .contactColumn {
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .contactColumn i {
-    color: #198754;
+    color: var(--blue);
 }
+
+/* Autre */
+
 
 /* footer */

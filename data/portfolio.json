@@ -3,30 +3,34 @@
         "image": "Booki.png",
         "title": "Booki",
         "text": "La page d'accueil d'une agence de voyage faite en HTML & CSS",
-        "link": "#"
+        "githubLink": "https://github.com/NovaCookie/Booki",
+        "aperçusLink": "https://novacookie.github.io/Booki/"
     },
     {
         "image": "PrintIt.png",
         "title": "Print it!",
         "text": "Premier projet pour débuter avec le langage JavaScript.",
-        "link": "#"
+        "githubLink": "https://github.com/NovaCookie/PrintIt",
+        "aperçusLink": "https://novacookie.github.io/PrintIt/"
+
     },
     {
         "image": "Sophie.png",
         "title": "Portfolio de Sophie",
         "text": "Voici une page web dynamique avec JavaScript un peu plus complexe",
-        "link": "https://github.com/NovaCookie/Projet7"
+        "githubLink": "https://github.com/NovaCookie/Sophie",
+        "aperçusLink": "https://novacookie.github.io/Sophie/"
     },
     {
         "image": "Kasa.png",
         "title": "Kasa",
         "text": "Application web de location immobilière avec la bibliothèque React",
-        "link": "https://github.com/NovaCookie/Projet8"
+        "githubLink": "https://github.com/NovaCookie/Kasa"
     },  
     {
         "image": "AutomatisationTests.png",
         "title": "Automatisation de tests",
         "text": "Premiers pas sur l'automatisation de tests avec le framework Cypress",
-        "link": "https://github.com/NovaCookie/Projet10"
+        "githubLink": "https://github.com/NovaCookie/EcoBlissBath"
     }
 ]

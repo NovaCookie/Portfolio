@@ -1,26 +1,27 @@
 // Function to add the "navbarDark" class to the navbar on scroll
 function handleNavbarScroll() {
-    const header = document.querySelector(".navbar");
     window.onscroll = function () {
         const top = window.scrollY;
         if (top >= 100) {
-            header.classList.add("navbarDark");
-        } else {
-            header.classList.remove("navbarDark");
-        }
-    };
+            transition()
+        };
+    }
 }
 
+function transition() {
+    var img = document.getElementById("tete");
+    img.classList.add("tourne");
+}
 // Function to handle navbar collapse on small devices after a click
 function handleNavbarCollapse() {
     const navLinks = document.querySelectorAll(".nav-item");
     const menuToggle = document.getElementById("navbarSupportedContent");
 
-    navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-            new bootstrap.Collapse(menuToggle).toggle();
-        });
-    });
+    // navLinks.forEach((link) => {
+    //     link.addEventListener("click", () => {
+    //         new bootstrap.Collapse(menuToggle).toggle();
+    //     });
+    // });
 }
 
 // Function to dynamically create HTML elements from the JSON file
@@ -79,8 +80,13 @@ function createPortfolioFromJSON() {
                     <div class="card-body">
                         <h4 class="card-title">${item.title}</h4>
                         <p class="card-text">${item.text}</p>
-                        <div class="text-center">
-                            <a href="${item.link}" class="btn btn-success">Lien</a>
+                        <div class="row text-center mt-4 mb-2">
+                            <div class="col mt-4">
+                                <a href="${item.githubLink}" class="btn">Github</a>
+                            </div>
+                            <div class="col mt-4">
+                                <a href="${item.aperçusLink}" class="btn">Aperçu</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,3 +110,6 @@ handleNavbarScroll();
 handleNavbarCollapse();
 createSkillsFromJSON();
 createPortfolioFromJSON();
+
+
+
