@@ -1,17 +1,20 @@
-// Function to add the "navbarDark" class to the navbar on scroll
-function handleNavbarScroll() {
-    window.onscroll = function () {
-        const top = window.scrollY;
-        if (top >= 100) {
-            transition()
-        };
-    }
-}
+// function handleNavbarScroll() {
+//     window.onscroll = function () {
+//         const top = window.scrollY;
+//         if (top >= 100) {
+//          
+//         };
+//     }
+// }
 
-function transition() {
-    var img = document.getElementById("tete");
+
+var img = document.getElementById("tete");
+img.addEventListener("mouseover", () => {
     img.classList.add("tourne");
-}
+    setTimeout(()=>{img.classList.remove("tourne")}, 1800)
+})
+
+
 // Function to handle navbar collapse on small devices after a click
 function handleNavbarCollapse() {
     const navLinks = document.querySelectorAll(".nav-item");
@@ -106,7 +109,7 @@ function createPortfolioFromJSON() {
 }
 
 // Call the functions to execute the code
-handleNavbarScroll();
+// handleNavbarScroll();
 handleNavbarCollapse();
 createSkillsFromJSON();
 createPortfolioFromJSON();
