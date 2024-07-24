@@ -1,31 +1,50 @@
-// function handleNavbarScroll() {
-//     window.onscroll = function () {
-//         const top = window.scrollY;
-//         if (top >= 100) {
-//          
-//         };
-//     }
-// }
-
-
-var img = document.getElementById("tete");
-img.addEventListener("mouseover", () => {
-    img.classList.add("tourne");
-    setTimeout(()=>{img.classList.remove("tourne")}, 1800)
-})
-
-
 // Function to handle navbar collapse on small devices after a click
 function handleNavbarCollapse() {
     const navLinks = document.querySelectorAll(".nav-item");
     const menuToggle = document.getElementById("navbarSupportedContent");
-
-    // navLinks.forEach((link) => {
-    //     link.addEventListener("click", () => {
-    //         new bootstrap.Collapse(menuToggle).toggle();
-    //     });
-    // });
 }
+
+// Function to dynamically create HTML elements from the JSON file
+function createAboutFromJSON() {
+    const container = document.querySelector("#about .container");
+    let row = document.createElement("div");
+    row.classList.add("row");
+    row.classList.add("align-items-center");
+
+    // Load the JSON file
+    fetch("data/about.json")
+        .then(response => response.json())
+
+        .then((data) => {
+            const info = data[0];
+            const img = info.image[0];
+            const id = img.id;
+            row.innerHTML = `
+            <div class="row mt-5"> 
+                <div class="col-3">
+                <img src="${img.src}" id="${img.id}" class="${img.class}" alt="${img.alt}"/>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-8">
+                    <p>${info.text}</p>
+                    <h3 class="text-center">Télécharger mon CV</h3>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn mt-5" href="${info.cv}" download><i class="fa fa-download"></i> Clique ici !</a>
+                    </div>  
+                </div>
+            </div>  
+                `;
+            container.appendChild(row)
+
+            var tournicoti = document.getElementById(id)
+            console.log(tournicoti);
+            tournicoti.addEventListener("click", () => {
+                tournicoti.classList.add("tourne");
+                setTimeout(() => { tournicoti.classList.remove("tourne") }, 1900)
+            })
+        });
+}
+
 
 // Function to dynamically create HTML elements from the JSON file
 function createSkillsFromJSON() {
@@ -109,7 +128,7 @@ function createPortfolioFromJSON() {
 }
 
 // Call the functions to execute the code
-// handleNavbarScroll();
+createAboutFromJSON();
 handleNavbarCollapse();
 createSkillsFromJSON();
 createPortfolioFromJSON();

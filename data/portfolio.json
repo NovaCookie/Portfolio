@@ -12,7 +12,6 @@
         "text": "Premier projet pour débuter avec le langage JavaScript.",
         "githubLink": "https://github.com/NovaCookie/PrintIt",
         "aperçusLink": "https://novacookie.github.io/PrintIt/"
-
     },
     {
         "image": "Sophie.png",
@@ -26,7 +25,7 @@
         "title": "Kasa",
         "text": "Application web de location immobilière avec la bibliothèque React",
         "githubLink": "https://github.com/NovaCookie/Kasa"
-    },  
+    },
     {
         "image": "AutomatisationTests.png",
         "title": "Automatisation de tests",

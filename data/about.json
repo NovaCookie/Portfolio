@@ -1,0 +1,14 @@
+[
+    {
+        "image": [
+            {
+                "src": "images/tete.png",
+                "alt": "Ma grosse tête",
+                "class": "imageAboutPage",
+                "id":"tete" 
+            }
+        ],
+        "text": "Bien le bonjour, comme vous le savez déjà, je m'appelle Nathan Carteau, ce que vous ne savez pas, c'est que j'ai 22 ans et dans ma vie, j'ai choisi une filière informatique en partant d'un BAC STI2D pour faire un BTS SIO option SLAM, c'est donc dans ce BTS que j'ai appris à développer dans certains langages tel que HTML/CSS, JavaScript, un peu de Java, un peu de PHP, etc... Je me suis ensuite tourné vers une POEC testeur logiciel où j'ai obtenu ma certification ISTQB, la suite vous la connaissez, j'ai voulu approfondir mes connaissances dans le domaine du test logiciel et donc j'ai fait une formation chez Open Classroom avec cet objectif en tête.",
+        "cv":"docs/CV_style-noir.pdf"
+    }
+]
