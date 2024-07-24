@@ -18,18 +18,22 @@
         "title": "Portfolio de Sophie",
         "text": "Voici une page web dynamique avec JavaScript un peu plus complexe",
         "githubLink": "https://github.com/NovaCookie/Sophie",
-        "aperçusLink": "https://novacookie.github.io/Sophie/"
+        "aperçusLink": "https://github.com/NovaCookie/Sophie"
     },
     {
         "image": "Kasa.png",
         "title": "Kasa",
         "text": "Application web de location immobilière avec la bibliothèque React",
-        "githubLink": "https://github.com/NovaCookie/Kasa"
+        "githubLink": "https://github.com/NovaCookie/Kasa",
+        "aperçusLink": "https://novacookie.github.io/Kasa/"
+
     },
     {
         "image": "AutomatisationTests.png",
         "title": "Automatisation de tests",
         "text": "Premiers pas sur l'automatisation de tests avec le framework Cypress",
-        "githubLink": "https://github.com/NovaCookie/EcoBlissBath"
+        "githubLink": "https://github.com/NovaCookie/EcoBlissBath",
+        "aperçusLink": "https://github.com/NovaCookie/EcoBlissBath"
+
     }
 ]
