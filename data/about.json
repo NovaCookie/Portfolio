@@ -2,7 +2,7 @@
     {
         "image": [
             {
-                "src": "images/tete.png",
+                "src": "images/tete.webp",
                 "alt": "Ma grosse tête",
                 "class": "imageAboutPage",
                 "id":"tete" 

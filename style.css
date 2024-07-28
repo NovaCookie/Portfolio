@@ -90,7 +90,7 @@ body {
 .bgimage {
     height: 100vh;
     max-height: 900px;
-    background: url("images/backgroundHeader.jpg");
+    background: url("images/backgroundHeader.webp");
     background-size: cover;
     position: relative;
 }
@@ -100,7 +100,7 @@ body {
     font-weight: 800;
     color: transparent;
     font-size: 120px;
-    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    background: url("images/rainbow-nebula.webp") repeat;
     background-position: 40% 50%;
     -webkit-background-clip: text;
     letter-spacing: -6px;
@@ -171,7 +171,7 @@ body {
 
 .card-title {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 

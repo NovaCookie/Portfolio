@@ -1,37 +1,37 @@
 [
     {
-        "image": "Booki.png",
+        "image": "Booki.webp",
         "title": "Booki",
-        "text": "La page d'accueil d'une agence de voyage faite en HTML & CSS",
+        "text": "La page d'accueil d'une agence de voyage faite en HTML & CSS, ce projet est responsif et fonctionne sur différentes tailles d'écran.",
         "githubLink": "https://github.com/NovaCookie/Booki",
         "aperçusLink": "https://novacookie.github.io/Booki/"
     },
     {
-        "image": "PrintIt.png",
+        "image": "PrintIt.webp",
         "title": "Print it!",
-        "text": "Premier projet pour débuter avec le langage JavaScript.",
+        "text": "Création d'un carousel avec le langage JavaScript, un projet simple pour débuter dans ce langage.",
         "githubLink": "https://github.com/NovaCookie/PrintIt",
         "aperçusLink": "https://novacookie.github.io/PrintIt/"
     },
     {
-        "image": "Sophie.png",
+        "image": "Sophie.webp",
         "title": "Portfolio de Sophie",
-        "text": "Voici une page web dynamique avec JavaScript un peu plus complexe",
+        "text": "Ce projet est une application web (portfolio) pour une personne imaginaire lancer avec docker, il consiste en une page web dynamique avec JavaScript un peu plus complexe, avec des requête API et de la modification du DOM.",
         "githubLink": "https://github.com/NovaCookie/Sophie",
         "aperçusLink": "https://github.com/NovaCookie/Sophie"
     },
     {
-        "image": "Kasa.png",
+        "image": "Kasa.webp",
         "title": "Kasa",
-        "text": "Application web de location immobilière avec la bibliothèque React",
+        "text": "Application web de location immobilière avec uniquement la bibliothèque React et comportant des requêtes à une API",
         "githubLink": "https://github.com/NovaCookie/Kasa",
         "aperçusLink": "https://novacookie.github.io/Kasa/"
 
     },
     {
-        "image": "AutomatisationTests.png",
+        "image": "AutomatisationTests.webp",
         "title": "Automatisation de tests",
-        "text": "Premiers pas sur l'automatisation de tests avec le framework Cypress",
+        "text": "Premiers pas sur l'automatisation de tests avec le framework Cypress et l'utilisation de docker pour lancer et tester un (faux) site web.",
         "githubLink": "https://github.com/NovaCookie/EcoBlissBath",
         "aperçusLink": "https://github.com/NovaCookie/EcoBlissBath"
 
