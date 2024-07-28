@@ -88,8 +88,8 @@ body {
 
 /* hero background image */
 .bgimage {
-    height: 100vh;
-    max-height: 900px;
+    height: 750px;
+    width: 100%;
     background: url("images/backgroundHeader.webp");
     background-size: cover;
     position: relative;
@@ -98,11 +98,9 @@ body {
 /* text css above hero image*/
 .hero_title {
     font-weight: 800;
-    color: transparent;
+    color: white;
     font-size: 120px;
-    background: url("images/rainbow-nebula.webp") repeat;
     background-position: 40% 50%;
-    -webkit-background-clip: text;
     letter-spacing: -6px;
 }
 
