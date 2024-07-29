@@ -1,20 +1,19 @@
 // Function to handle navbar collapse on small devices after a click
-// function handleNavbarCollapse() {
-//     const navLinks = document.querySelectorAll(".nav-item");
-//     const menuToggle = document.getElementById("navbarSupportedContent");
-// }
+function handleNavbarCollapse() {
+    const navLinks = document.querySelectorAll(".nav-item");
+    const menuToggle = document.getElementById("navbarSupportedContent");
+}
 
 // Function to dynamically create HTML elements from the JSON file
-function createAboutFromJSON() {
+async function createAboutFromJSON() {
     const container = document.querySelector("#about .container");
     let row = document.createElement("div");
     row.classList.add("row");
     row.classList.add("align-items-center");
 
     // Load the JSON file
-    fetch("data/about.json")
+    await fetch("data/about.json")
         .then(response => response.json())
-
         .then((data) => {
             const info = data[0];
             const img = info.image[0];
@@ -39,19 +38,19 @@ function createAboutFromJSON() {
 
 
 // Function to dynamically create HTML elements from the JSON file
-function createSkillsFromJSON() {
+async function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
     let row = document.createElement("div");
     row.classList.add("row");
 
     // Load the JSON file
-    fetch("data/skills.json")
+    await fetch("data/skills.json")
         .then((response) => response.json())
         .then((data) => {
             // Iterate through the JSON data and create HTML elements
             data.forEach((item, index) => {
                 const card = document.createElement("div");
-                card.classList.add("col-lg-4", "mt-4");
+                card.classList.add("d-flex", "col-lg-4", "mt-4");
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
@@ -75,36 +74,38 @@ function createSkillsFromJSON() {
         });
 }
 // Function to dynamically create HTML elements from the JSON file
-function createPortfolioFromJSON() {
+async function createPortfolioFromJSON() {
     const container = document.querySelector("#portfolio .container");
     let row = document.createElement("div");
     row.classList.add("row");
 
     // Load the JSON file
-    fetch("data/portfolio.json")
+    await fetch("data/portfolio.json")
         .then((response) => response.json())
         .then((data) => {
             // Iterate through the JSON data and create HTML elements
             data.forEach((item, index) => {
                 const card = document.createElement("div");
-                card.classList.add("col-lg-4", "mt-4");
+                card.classList.add("d-flex", "col-lg-4", "mt-4");
                 card.innerHTML = `
                     <div class="card portfolioContent">
                         <div class="card-body">
-                            <img src="images/${item.image} alt="${item.alt}">
+                            <img src="images/${item.image}" alt="${item.alt}">
                             <h4 class="card-title m-2">${item.title}</h4>
                             <p class="card-text">${item.text}</p>
-                                <div class="row text-center mt-3 mb-2">
-                            <div class="col">
-                                <a href="${item.githubLink}" class="btn">Github</a>
-                            </div>
-                            <div class="col">
-                                <a href="${item.aperçusLink}" class="btn">Aperçu</a>
+                        </div>   
+                            <div class="card-footer">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="${item.githubLink}" class="btn">Github</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="${item.aperçusLink}" class="btn">Aperçu</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                `;
+                    `;
 
                 // Append the card to the current row
                 row.appendChild(card);

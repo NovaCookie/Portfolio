@@ -110,17 +110,15 @@ body {
 /* about */
 #about {
     color: white;
-
-
 }
 
-#about.imageAboutPage {
+#about .imageAboutPage {
     width: 100%;
     margin: 0;
 }
 
 /* Style buttons */
-#about.btn {
+#about .btn {
     background-color: rgb(255, 192, 0);
     border: none;
     color: white;
@@ -131,17 +129,13 @@ body {
 }
 
 /* Darker background on mouse-over */
-#about.btn:hover {
+#about .btn:hover {
     background-color: white;
     color: rgb(255, 192, 0);
 }
 
-
-
-
 /* skills */
-.skillsText.card {
-    height: 350px;
+.skillsText .card {
     cursor: pointer;
 }
 
@@ -168,24 +162,31 @@ body {
 
 
 /* portfolio */
-.portfolioContent.card {
-    min-height: 350px;
+.portfolioContent {
+    min-height: 380px;
+    height: fit-content;
+    padding: 0;
 }
 
 .portfolioContent img {
     width: 100%;
-    min-height: 150px;
+    min-height: 100px;
     object-fit: contain;
 }
 
 #portfolio p {
-
     text-align: center;
     width: 100%;
-    min-height: 100px;
 }
 
-#portfolio .btn {
+.portfolioContent p {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 5% 0;
+}
+
+.portfolioContent .btn {
     color: white;
     background-color: rgb(60, 60, 240);
     width: 100%;
