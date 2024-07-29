@@ -179,25 +179,25 @@ body {
     min-height: 350px;
 }
 
-.portfolioContent img{
+.portfolioContent img {
     width: 100%;
     min-height: 150px;
     object-fit: contain;
 }
 
-#portfolio {
-    p {
-        text-align: center;
-        width: 100%;
-        min-height: 100px;
-    }
+#portfolio p {
 
-    .btn {
-        color: white;
-        background-color: var(--blue);
-        width: 100%;
-    }
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
 }
+
+#portfolio .btn {
+    color: white;
+    background-color: var(--blue);
+    width: 100%;
+}
+
 
 /* contact */
 .contactColumn {
