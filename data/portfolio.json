@@ -1,6 +1,6 @@
 [
     {
-        "image": "Booki.webp",
+        "image": "/Booki.webp",
         "title": "Booki",
         "text": "La page d'accueil d'une agence de voyage faite en HTML & CSS, ce projet est responsif et fonctionne sur différentes tailles d'écran.",
         "githubLink": "https://github.com/NovaCookie/Booki",

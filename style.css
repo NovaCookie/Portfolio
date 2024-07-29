@@ -88,9 +88,10 @@ body {
 
 /* hero background image */
 .bgimage {
-    height: 800px;
+    max-height: 900px;
+    min-height: 800px;
     width: 100%;
-    background: url("images/backgroundHeader.webp");
+    /* background: url("images/backgroundHeader.webp"); */
     background-size: cover;
     position: relative;
 }
