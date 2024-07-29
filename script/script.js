@@ -1,8 +1,8 @@
 // Function to handle navbar collapse on small devices after a click
-function handleNavbarCollapse() {
-    const navLinks = document.querySelectorAll(".nav-item");
-    const menuToggle = document.getElementById("navbarSupportedContent");
-}
+// function handleNavbarCollapse() {
+//     const navLinks = document.querySelectorAll(".nav-item");
+//     const menuToggle = document.getElementById("navbarSupportedContent");
+// }
 
 // Function to dynamically create HTML elements from the JSON file
 function createAboutFromJSON() {
@@ -18,7 +18,6 @@ function createAboutFromJSON() {
         .then((data) => {
             const info = data[0];
             const img = info.image[0];
-            const id = img.id;
             row.innerHTML = `
             <div class="row mt-5"> 
                 <div class="col-3">
@@ -56,7 +55,7 @@ function createSkillsFromJSON() {
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
-                            <img src="./images/${item.image}" />
+                            <img src="./images/${item.image}" alt="${item.alt}" />
                             <h4 class="card-title mt-3">${item.title}</h4>
                             <p class="card-text mt-3">${item.text}</p>
                         </div>
