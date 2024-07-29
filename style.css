@@ -1,12 +1,6 @@
 /******* GENERAL *******/
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-3,900&display=swap');
 
-:root {
-    --blue: rgb(60, 60, 240);
-    --yellow: rgb(255, 192, 0);
-    --grey: #5b5b5b;
-}
-
 body {
     background-color: rgb(20, 19, 19) !important;
     font-family: "Inter", sans-serif !important;
@@ -17,7 +11,6 @@ body {
 }
 
 /* transition*/
-
 .tourne {
     transition: 2s;
     rotate: 360deg;
@@ -47,13 +40,13 @@ body {
 #portfolio {
     h1 {
         font-size: 100px;
-        color: var(--yellow)
+        color: rgb(255, 192, 0);
     }
 
     h2 {
         font-size: 60px;
         margin-bottom: 3rem;
-        color: var(--yellow)
+        color: rgb(255, 192, 0);
     }
 
 }
@@ -68,10 +61,9 @@ body {
     }
 }
 
-
 /* display background dark color on navbar scroll */
 .navbarScroll {
-    background-color: var(--grey);
+    background-color: #5b5b5b;
 }
 
 .nav-link {
@@ -119,29 +111,32 @@ body {
 #about {
     color: white;
 
-    .imageAboutPage {
-        width: 100%;
-        margin: 0;
-    }
-
-    /* Style buttons */
-    .btn {
-        background-color: var(--yellow);
-        border: none;
-        color: white;
-        padding: 12px 30px;
-        cursor: pointer;
-        font-size: 20px;
-        width: 80%;
-    }
-
-    /* Darker background on mouse-over */
-    .btn:hover {
-        background-color: white;
-        color: var(--yellow)
-    }
 
 }
+
+#about.imageAboutPage {
+    width: 100%;
+    margin: 0;
+}
+
+/* Style buttons */
+#about.btn {
+    background-color: rgb(255, 192, 0);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 80%;
+}
+
+/* Darker background on mouse-over */
+#about.btn:hover {
+    background-color: white;
+    color: rgb(255, 192, 0);
+}
+
+
 
 
 /* skills */
@@ -192,10 +187,9 @@ body {
 
 #portfolio .btn {
     color: white;
-    background-color: var(--blue);
+    background-color: rgb(60, 60, 240);
     width: 100%;
 }
-
 
 /* contact */
 .contactColumn {
@@ -206,10 +200,5 @@ body {
 }
 
 .contactColumn i {
-    color: var(--blue);
+    color: rgb(60, 60, 240);
 }
-
-/* Autre */
-
-
-/* footer */
