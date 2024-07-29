@@ -92,7 +92,7 @@ function createPortfolioFromJSON() {
                 card.innerHTML = `
                     <div class="card portfolioContent">
                         <div class="card-body">
-                            <img src="images/${item.image}">
+                            <img src="images/${item.image} alt="${item.alt}">
                             <h4 class="card-title m-2">${item.title}</h4>
                             <p class="card-text">${item.text}</p>
                                 <div class="row text-center mt-3 mb-2">
