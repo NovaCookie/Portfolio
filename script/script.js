@@ -35,13 +35,6 @@ function createAboutFromJSON() {
             </div>  
                 `;
             container.appendChild(row)
-
-            var tournicoti = document.getElementById(id)
-            console.log(tournicoti);
-            tournicoti.addEventListener("click", () => {
-                tournicoti.classList.add("tourne");
-                setTimeout(() => { tournicoti.classList.remove("tourne") }, 1900)
-            })
         });
 }
 
@@ -98,15 +91,15 @@ function createPortfolioFromJSON() {
                 card.classList.add("col-lg-4", "mt-4");
                 card.innerHTML = `
                     <div class="card portfolioContent">
-                    <img class="card-img-top" src="images/${item.image}" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">${item.title}</h4>
-                        <p class="card-text">${item.text}</p>
-                        <div class="row text-center mt-4 mb-2">
-                            <div class="col mt-4">
+                        <div class="card-body">
+                            <img src="images/${item.image}">
+                            <h4 class="card-title m-2">${item.title}</h4>
+                            <p class="card-text">${item.text}</p>
+                                <div class="row text-center mt-3 mb-2">
+                            <div class="col">
                                 <a href="${item.githubLink}" class="btn">Github</a>
                             </div>
-                            <div class="col mt-4">
+                            <div class="col">
                                 <a href="${item.aperçusLink}" class="btn">Aperçu</a>
                             </div>
                         </div>

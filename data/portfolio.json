@@ -16,7 +16,7 @@
     {
         "image": "Sophie.webp",
         "title": "Portfolio de Sophie",
-        "text": "Ce projet est une application web (portfolio) pour une personne imaginaire lancer avec docker, il consiste en une page web dynamique avec JavaScript un peu plus complexe, avec des requête API et de la modification du DOM.",
+        "text": "Création d'une page web dynamique avec JavaScript, des requête API et de la modification du DOM.",
         "githubLink": "https://github.com/NovaCookie/Sophie",
         "aperçusLink": "https://github.com/NovaCookie/Sophie"
     },
