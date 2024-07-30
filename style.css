@@ -107,8 +107,7 @@ body {
 /* Style buttons */
 #about .btn {
     background-color: rgb(255, 192, 0);
-    /* border: none; */
-    /* color: white; */
+    color: black;
     padding: 12px 30px;
     cursor: pointer;
     width: 80%;
@@ -173,7 +172,7 @@ body {
 }
 
 .portfolioContent .btn {
-    /* color: white; */
+    color: black;
     background-color: rgb(255, 192, 0);
     width: 100%;
 }
@@ -187,7 +186,15 @@ body {
 }
 
 .contactColumn i {
-    color: rgb(60, 60, 240);
+    /* color: rgb(60, 60, 240); */
+    color: rgb(255, 192, 0);
+
+
+}
+
+.contactColumn a {
+    color: white !important;
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
