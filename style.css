@@ -113,17 +113,15 @@ body {
 /* Style buttons */
 #about .btn {
     background-color: rgb(255, 192, 0);
-    border: none;
-    color: white;
+    /* border: none; */
+    /* color: white; */
     padding: 12px 30px;
     cursor: pointer;
     width: 80%;
 }
 
-/* Darker background on mouse-over */
-#about .btn:hover {
-    background-color: white;
-    color: rgb(255, 192, 0);
+.btn:hover {
+    scale: 1.05;
 }
 
 /* skills */
@@ -179,8 +177,8 @@ body {
 }
 
 .portfolioContent .btn {
-    color: white;
-    background-color: rgb(60, 60, 240);
+    /* color: white; */
+    background-color: rgb(255, 192, 0);
     width: 100%;
 }
 
