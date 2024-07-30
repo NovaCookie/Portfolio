@@ -188,12 +188,11 @@ body {
 .contactColumn i {
     /* color: rgb(60, 60, 240); */
     color: rgb(255, 192, 0);
-
-
 }
 
 .contactColumn a {
     color: white !important;
+    text-align: center;
 
 }
 
