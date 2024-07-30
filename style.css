@@ -240,7 +240,7 @@ body {
         font-size: 20px;
     }
 }
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 1000px and up) */
 @media (min-width: 1000px) {
     .hero-text{
         top: 35%;
@@ -257,7 +257,4 @@ body {
         font-size: 35px;
     }
 
-    .card-title {
-        font-size: 20px;
-    }
 }
