@@ -1,9 +1,3 @@
-// Function to handle navbar collapse on small devices after a click
-function handleNavbarCollapse() {
-    const navLinks = document.querySelectorAll(".nav-item");
-    const menuToggle = document.getElementById("navbarSupportedContent");
-}
-
 // Function to dynamically create HTML elements from the JSON file
 async function createAboutFromJSON() {
     const container = document.querySelector("#about .container");
@@ -18,12 +12,12 @@ async function createAboutFromJSON() {
             const info = data[0];
             const img = info.image[0];
             row.innerHTML = `
-            <div class="row mt-5"> 
-                <div class="col-3">
+            <div class="d-lg-flex row-lg mt-5"> 
+                <div class="mx-auto mb-5 col-lg-3 col-md-6 ">
                 <img src="${img.src}" id="${img.id}" class="${img.class}" alt="${img.alt}"/>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-8">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-8">
                     <p>${info.text}</p>
                     <h3 class="text-center">Télécharger mon CV</h3>
                     <div class="d-flex justify-content-center">
@@ -35,8 +29,6 @@ async function createAboutFromJSON() {
             container.appendChild(row)
         });
 }
-
-
 // Function to dynamically create HTML elements from the JSON file
 async function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
@@ -50,12 +42,12 @@ async function createSkillsFromJSON() {
             // Iterate through the JSON data and create HTML elements
             data.forEach((item, index) => {
                 const card = document.createElement("div");
-                card.classList.add("d-flex", "col-lg-4", "mt-4");
+                card.classList.add("d-lg-flex","align-item-center", "col-lg-4","mt-4");
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
                             <img src="./images/${item.image}" alt="${item.alt}" />
-                            <h4 class="card-title mt-3">${item.title}</h4>
+                            <h3 class="card-title mt-3">${item.title}</h4>
                             <p class="card-text mt-3">${item.text}</p>
                         </div>
                     </div>
@@ -122,7 +114,6 @@ async function createPortfolioFromJSON() {
 
 // Call the functions to execute the code
 createAboutFromJSON();
-handleNavbarCollapse();
 createSkillsFromJSON();
 createPortfolioFromJSON();
 
