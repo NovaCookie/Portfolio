@@ -221,17 +221,40 @@ body {
             font-size: 70px;
         }
     }
-
+    .hero-text{
+        top: 22%;
+    }
     #about p {
         text-align: inherit;
     }
-
+  
     .hero_title {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .hero_desc {
         font-size: 30px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 1000px) {
+    .hero-text{
+        top: 35%;
+    }
+    #about p {
+        text-align: inherit;
+    }
+  
+    .hero_title {
+        font-size: 75px;
+    }
+
+    .hero_desc {
+        font-size: 35px;
     }
 
     .card-title {
