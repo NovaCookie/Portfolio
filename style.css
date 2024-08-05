@@ -256,6 +256,9 @@ body {
         height: 230px;
 
     }
+    .portfolioContent img {
+        height: 200px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -301,6 +304,9 @@ body {
         margin: auto;
         height: 100%;
         position: inherit;
+    }
+    .portfolioContent img {
+        height: 270px;
     }
 }
 
