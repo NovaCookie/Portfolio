@@ -151,7 +151,7 @@ body {
 .portfolioContent img {
     width: 100%;
     min-height: 100px;
-    height: auto;
+    height:135px;
     object-fit: contain;
 }
 
@@ -235,6 +235,9 @@ body {
         height: 100%;
         position: inherit;
     }
+    .portfolioContent img {
+        height: 130px;
+      }
 }
 
 /* Medium devices (tablets, 1000px and up) */
