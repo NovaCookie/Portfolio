@@ -14,7 +14,7 @@ async function createAboutFromJSON() {
             row.innerHTML = `
             <div class="d-lg-flex row-lg mt-5"> 
                 <div class="mx-auto mb-5 col-lg-3 col-md-6 ">
-                <img src="${img.src}" id="${img.id}" class="${img.class}" alt="${img.alt}"/>
+                <img src="${img.src}" id="${img.id}" class="${img.class}" alt="${img.alt}" loading="${img.loading}" width="${img.width}" height="${img.height}"/>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-8">
@@ -46,7 +46,7 @@ async function createSkillsFromJSON() {
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
-                            <img src="./images/${item.image}" alt="${item.alt}" />
+                            <img src="./images/${item.image}" alt="${item.alt}" loading="lazy" width="100px" height="100px"/>
                             <h3 class="card-title mt-3">${item.title}</h4>
                             <p class="card-text mt-3">${item.text}</p>
                         </div>
@@ -82,7 +82,7 @@ async function createPortfolioFromJSON() {
                 card.innerHTML = `
                     <div class="card portfolioContent">
                         <div class="card-body">
-                            <img src="images/${item.image}" alt="${item.alt}">
+                            <img src="images/${item.image}" alt="${item.alt}" loading="lazy" width="100px" height="100px">
                             <h4 class="card-title m-2">${item.title}</h4>
                             <p class="card-text">${item.text}</p>
                         </div>   

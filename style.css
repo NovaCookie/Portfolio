@@ -159,8 +159,8 @@ body {
 .portfolioContent img {
     width: 100%;
     min-height: 100px;
-    height: 270px;
     object-fit: contain;
+    height: auto;
 }
 
 #portfolio p {
@@ -256,9 +256,6 @@ body {
         height: 230px;
 
     }
-    .portfolioContent img {
-        height: 200px;
-    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -305,27 +302,4 @@ body {
         height: 100%;
         position: inherit;
     }
-    .portfolioContent img {
-        height: 270px;
-    }
-}
-
-/* Medium devices (tablets, 1000px and up) */
-@media (min-width: 1000px) {
-    .hero-text {
-        top: 35%;
-    }
-
-    #about p {
-        text-align: inherit;
-    }
-
-    .hero_title {
-        font-size: 75px;
-    }
-
-    .hero_desc {
-        font-size: 35px;
-    }
-
 }
