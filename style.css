@@ -3,7 +3,6 @@
 
 html {
     font-size: 15px;
-    width: fit-content;
 }
 
 body {
@@ -54,11 +53,7 @@ body {
     }
 }
 
-/*navbar*/
-.navbar {
-    width: 100%;
-}
-
+/* display background dark color on navbar scroll */
 .navbarScroll {
     background-color: #5b5b5b;
 }
@@ -77,7 +72,6 @@ body {
 
 /* text css above hero image*/
 .hero_title {
-
     font-weight: 800;
     color: white;
     font-size: 30px;
@@ -207,48 +201,12 @@ body {
 
 }
 
-@media (max-width: 576px) {
-    html{
-        font-size: 12px;
-    }
-    .bgimage img {
-        height: 400px;
-    }
-
-    .hero_title {
-        font-size: 25px;
-    }
-
-    .hero_desc {
-        font-size: 15px;
-    }
-
-    #about .imageAboutPage {
-        width: 150px;
-        margin: auto;
-        height: 170px;
-
-    }
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-    html {
-        width: inherit;
+    .bgimage img {
+        height: 400px;
     }
-    
-    #about,
-    #skills,
-    #contact,
-    #portfolio {
-
-        h1,
-        h2 {
-            font-size: 40px;
-        }
-    }
-
 
     .hero_title {
         font-size: 40px;
@@ -257,18 +215,16 @@ body {
     .hero_desc {
         font-size: 20px;
     }
-
     #about .imageAboutPage {
         width: 210px;
         margin: auto;
         height: 230px;
-
+   
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
 
     #about,
     #skills,
@@ -306,9 +262,9 @@ body {
     }
 
     #about .imageAboutPage {
-        width: 290px;
+        width: 100%;
         margin: auto;
-        height: 300px;
+        height: 100%;
         position: inherit;
     }
 }
