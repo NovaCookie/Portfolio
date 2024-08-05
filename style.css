@@ -104,6 +104,9 @@ body {
     width: 50%;
     margin: auto;
     height: 50%;
+    position: relative;
+    left: 25%;
+
 }
 
 /* Style buttons */
@@ -216,8 +219,7 @@ body {
         width: 210px;
         margin: auto;
         height: 230px;
-        position: relative;
-        left: 25%;
+   
     }
 }
 
