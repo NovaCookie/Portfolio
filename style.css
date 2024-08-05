@@ -1,6 +1,4 @@
 /******* GENERAL *******/
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-3,900&display=swap'); */
-
 html {
     font-size: 15px;
 }
@@ -202,6 +200,41 @@ body {
 }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    html {
+        font-size: 15px;
+    }
+    #about,
+    #skills,
+    #contact,
+    #portfolio {
+
+        h1,
+        h2 {
+            font-size: 40px;
+        }
+    }
+    .bgimage img {
+        max-height: 300px;
+    }
+
+    .hero_title {
+        font-size: 30px;
+        letter-spacing: inherit;
+    }
+
+    .hero_desc {
+        font-size: 15px;
+    }
+
+    #about .imageAboutPage {
+        width: 160px;
+        height: 180px;
+        left: 30%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
     .bgimage img {
@@ -215,11 +248,12 @@ body {
     .hero_desc {
         font-size: 20px;
     }
+
     #about .imageAboutPage {
         width: 210px;
         margin: auto;
         height: 230px;
-   
+
     }
 }
 
