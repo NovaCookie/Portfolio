@@ -92,6 +92,7 @@ body {
 
 /* about */
 #about {
+    align-items: center;
     color: white;
 }
 
@@ -100,8 +101,9 @@ body {
 }
 
 #about .imageAboutPage {
-    width: 100%;
-    margin: 0;
+    width: 50%;
+    margin: auto;
+    height: 50%;
 }
 
 /* Style buttons */
@@ -210,6 +212,13 @@ body {
     .hero_desc {
         font-size: 20px;
     }
+    #about .imageAboutPage {
+        width: 210px;
+        margin: auto;
+        height: 230px;
+        position: relative;
+        left: 25%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -248,6 +257,13 @@ body {
 
     .card-title {
         font-size: 20px;
+    }
+
+    #about .imageAboutPage {
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        position: inherit;
     }
 }
 

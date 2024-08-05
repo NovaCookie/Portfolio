@@ -18,7 +18,7 @@ async function createAboutFromJSON() {
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-8">
-                    <p>${info.text}</p>
+                    <p class="mb-5">${info.text}</p>
                     <h3 class="text-center">Télécharger mon CV</h3>
                     <div class="d-flex justify-content-center">
                         <a class="btn mt-5" href="${info.cv}" download><i class="fa fa-download"></i> Clique ici !</a>
