@@ -159,6 +159,7 @@ body {
 .portfolioContent img {
     width: 100%;
     min-height: 100px;
+    height: 270px;
     object-fit: contain;
 }
 
@@ -199,8 +200,8 @@ body {
 
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+/* Small devices (landscape phones, 576px and less) */
+/* @media (max-width: 576px) {
     html {
         font-size: 15px;
     }
@@ -232,7 +233,7 @@ body {
         height: 180px;
         left: 30%;
     }
-}
+} */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
