@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-3,900&display=swap');
 
 html {
-    width: fit-content;
     font-size: 15px;
 }
 
@@ -65,6 +64,7 @@ body {
 
 /* hero background image */
 .bgimage img {
+    height: 500px;
     min-height: 400px;
     width: 100%;
     padding: 0px;
@@ -199,6 +199,10 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
+    .bgimage img {
+        height: 400px;
+    }
+
     .hero_title {
         font-size: 40px;
     }
@@ -221,13 +225,19 @@ body {
             font-size: 70px;
         }
     }
-    .hero-text{
+
+    .bgimage img {
+        height: 700px;
+    }
+
+    .hero-text {
         top: 22%;
     }
+
     #about p {
         text-align: inherit;
     }
-  
+
     .hero_title {
         font-size: 60px;
     }
@@ -240,15 +250,17 @@ body {
         font-size: 20px;
     }
 }
+
 /* Medium devices (tablets, 1000px and up) */
 @media (min-width: 1000px) {
-    .hero-text{
+    .hero-text {
         top: 35%;
     }
+
     #about p {
         text-align: inherit;
     }
-  
+
     .hero_title {
         font-size: 75px;
     }
