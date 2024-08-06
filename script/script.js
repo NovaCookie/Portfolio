@@ -16,8 +16,8 @@ async function createSkillsFromJSON() {
                     <div class="card skillsText">
                         <div class="card-body">
                             <img src="./images/${item.image}" alt="${item.alt}"/>
-                            <h3 class="card-title mt-3">${item.title}</h4>
-                            <p class="card-text mt-3">${item.text}</p>
+                            <h3 class="card-title text-center mt-3">${item.title}</h4>
+                            <p class="card-text text-center mt-3 ">${item.text}</p>
                         </div>
                     </div>
                 `;
@@ -51,9 +51,9 @@ async function createPortfolioFromJSON() {
                 card.innerHTML = `
                     <div class="card portfolioContent">
                         <div class="card-body">
-                            <img src="images/${item.image}" alt="${item.alt}">
-                            <h4 class="card-title m-2">${item.title}</h4>
-                            <p class="card-text">${item.text}</p>
+                            <img class="d-flex justify-content-center mx-auto" src="images/${item.image}" alt="${item.alt}">
+                            <h4 class="card-title text-center m-2">${item.title}</h4>
+                            <p class="card-text text-center">${item.text}</p>
                         </div>   
                             <div class="card-footer">
                             <div class="row">
