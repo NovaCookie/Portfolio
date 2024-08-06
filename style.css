@@ -138,6 +138,7 @@ body {
 .card-title {
     text-align: center;
     color: black;
+    font-weight: 700;
 }
 
 
@@ -227,6 +228,7 @@ body {
 
     .card-title {
         font-size: 20px;
+  
     }
 
     #about .imageAboutPage {
