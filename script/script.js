@@ -47,7 +47,7 @@ async function createPortfolioFromJSON() {
             // Iterate through the JSON data and create HTML elements
             data.forEach((item, index) => {
                 const card = document.createElement("div");
-                card.classList.add("d-flex", "col-lg-4", "mt-4");
+                card.classList.add("d-flex", "col-lg-4", "mt-5");
                 card.innerHTML = `
                     <div class="card portfolioContent">
                         <div class="card-body">

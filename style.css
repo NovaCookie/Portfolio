@@ -1,15 +1,10 @@
 /******* GENERAL *******/
-html {
-    font-size: 15px;
-}
-
 body {
     background-color: rgb(20, 19, 19) !important;
     font-family: "Inter", sans-serif !important;
     font-optical-sizing: auto !important;
-    font-weight: 900 !important;
-    font-style: normal !important;
-    font-variation-settings: "slnt" -3 !important;
+    font-weight: 600 !important;
+    font-size: 15px;
 }
 
 /* spacing on all sections */
@@ -18,14 +13,14 @@ body {
 #portfolio,
 #contact {
     margin-top: 4rem;
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 #about,
 #skills,
 #portfolio {
     h1 {
-        font-size: 40px;
+        font-size: 50px;
         color: rgb(255, 192, 0);
     }
 
@@ -226,7 +221,7 @@ body {
     }
 
     #about .imageAboutPage {
-        width: 310px;
-        height: 340px;
+        width: 270px;
+        height: 300px;
     }
 }
