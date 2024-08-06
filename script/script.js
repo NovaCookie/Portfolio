@@ -1,6 +1,6 @@
 // Function to dynamically create HTML elements from the JSON file
 async function createHeroFromJSON() {
-    const containerHero = document.querySelector("#home .container-fluid");
+    const container = document.querySelector("#home .container-fluid");
     let row = document.createElement("div");
     row.classList.add("row", "align-item-center");
 
@@ -10,14 +10,14 @@ async function createHeroFromJSON() {
         .then((data) => {
             row.innerHTML = `
            
-                 <img src="${data[0].image}" alt="${data[0].alt}"/>
+                <img src="${data[0].image}" alt="${data[0].alt}"/>
                 <div class="col mx-auto hero-text">
                     <h1 class="hero_title">${data[0].hero_title}</h1>
                     <p class="hero_desc">${data[0].hero_desc}</p>
                 </div>  
 
             `;
-            containerHero.appendChild(row)
+            container.appendChild(row)
         });
 }
 // Function to dynamically create HTML elements from the JSON file
@@ -33,7 +33,7 @@ async function createAboutFromJSON() {
             row.innerHTML = `
             <div class="d-lg-flex row-lg mt-5"> 
                 <div class="col-lg-3 mx-auto d-flex justify-content-center mb-5">
-                // <img src="${data[1].image}" class="${data[1].class}" alt="${data[1].alt}"/>
+                <img src="${ data[1].image}" class="${data[1].class}" alt="${data[1].alt}"/>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-8">
@@ -65,6 +65,7 @@ async function createSkillsFromJSON() {
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
+                            <img src="./images/${item.image}" alt="${item.alt}"/>
                             <h3 class="card-title mt-3">${item.title}</h4>
                             <p class="card-text mt-3">${item.text}</p>
                         </div>
@@ -137,5 +138,4 @@ createSkillsFromJSON();
 createPortfolioFromJSON();
 
 
-<img src="./images/${item.image}" alt="${item.alt}"/>
 
