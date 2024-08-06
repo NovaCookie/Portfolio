@@ -1,19 +1,15 @@
 // Function to dynamically create HTML elements from the JSON file
 async function createHeroFromJSON() {
     const containerHero = document.querySelector("#home .container-fluid");
-    const containerAbout = document.querySelector("#about .container");
-
-    let divHero = document.createElement("div");
-    divHero.classList.add("row", "align-item-center");
-
-    let divAbout = document.createElement("div");
-    divAbout.classList.add("row", "align-item-center");
+    let row = document.createElement("div");
+    row.classList.add("row", "align-item-center");
 
     // Load the JSON file
     await fetch("data/data.json")
         .then(response => response.json())
         .then((data) => {
-            divHero.innerHTML = `
+            row.innerHTML = `
+           
                 <img src="${data[0].image}" alt="${data[0].alt}"/>
                 <div class="col mx-auto hero-text">
                     <h1 class="hero_title">${data[0].hero_title}</h1>
@@ -21,9 +17,20 @@ async function createHeroFromJSON() {
                 </div>  
 
             `;
-            containerHero.appendChild(divHero);
+            containerHero.appendChild(row)
+        });
+}
+// Function to dynamically create HTML elements from the JSON file
+async function createAboutFromJSON() {
+    const container = document.querySelector("#about .container");
+    let row = document.createElement("div");
+    row.classList.add("row", "align-items-center");
 
-            divAbout.innerHTML = `
+    // Load the JSON file
+    await fetch("data/data.json")
+        .then(response => response.json())
+        .then((data) => {
+            row.innerHTML = `
             <div class="d-lg-flex row-lg mt-5"> 
                 <div class="col-lg-3 mx-auto d-flex justify-content-center mb-5">
                 <img src="${data[1].image}" class="${data[1].class}" alt="${data[1].alt}"/>
@@ -38,37 +45,9 @@ async function createHeroFromJSON() {
                 </div>
             </div>  
                 `;
-            containerAbout.appendChild(divAbout)
+            container.appendChild(row)
         });
 }
-// Function to dynamically create HTML elements from the JSON file
-// async function createAboutFromJSON() {
-//     const container = document.querySelector("#about .container");
-//     let row = document.createElement("div");
-//     row.classList.add("row", "align-items-center");
-
-//     // Load the JSON file
-//     await fetch("data/data.json")
-//         .then(response => response.json())
-//         .then((data) => {
-//             row.innerHTML = `
-//             <div class="d-lg-flex row-lg mt-5"> 
-//                 <div class="col-lg-3 mx-auto d-flex justify-content-center mb-5">
-//                 <img src="${data[1].image}" class="${data[1].class}" alt="${data[1].alt}"/>
-//                 </div>
-//                 <div class="col-lg-1"></div>
-//                 <div class="col-lg-8">
-//                     <p class="mb-5">${data[1].text}</p>
-//                     <h3 class="text-center">Télécharger mon CV</h3>
-//                     <div class="d-flex justify-content-center">
-//                         <a class="btn mt-5" href="${data[1].cv}" download><i class="fa fa-download"></i> Clique ici !</a>
-//                     </div>  
-//                 </div>
-//             </div>  
-//                 `;
-//             container.appendChild(row)
-//         });
-// }
 // Function to dynamically create HTML elements from the JSON file
 async function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
@@ -154,7 +133,7 @@ async function createPortfolioFromJSON() {
 
 // Call the functions to execute the code
 createHeroFromJSON();
-// createAboutFromJSON();
+createAboutFromJSON();
 createSkillsFromJSON();
 createPortfolioFromJSON();
 
