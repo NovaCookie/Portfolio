@@ -151,9 +151,11 @@ body {
 
 .portfolioContent img {
     width: 100%;
-    min-height: 100px;
-    height:135px;
     object-fit: contain;
+    width: 100%;
+    height: auto;
+    min-height: 130px;
+
 }
 
 #portfolio p {
@@ -228,7 +230,7 @@ body {
 
     .card-title {
         font-size: 20px;
-  
+
     }
 
     #about .imageAboutPage {
@@ -237,9 +239,7 @@ body {
         height: 100%;
         position: inherit;
     }
-    .portfolioContent img {
-        height: 130px;
-      }
+
 }
 
 /* Medium devices (tablets, 1000px and up) */
