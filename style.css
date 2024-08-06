@@ -1,10 +1,14 @@
 /******* GENERAL *******/
+html {
+    font-size: 15px;
+}
+
 body {
     background-color: rgb(20, 19, 19) !important;
     font-family: "Inter", sans-serif !important;
     font-optical-sizing: auto !important;
     font-weight: 600 !important;
-    font-size: 15px;
+    font-style: normal !important;
 }
 
 /* spacing on all sections */
@@ -22,7 +26,7 @@ body {
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
 }
@@ -43,9 +47,17 @@ body {
     color: white !important;
 }
 
+/* hero background image */
+.bgimage img {
+    height: 300px;
+    min-height: 100px;
+    width: 100%;
+    padding: 0px;
+}
+
 /* text css above hero image*/
 .hero_title {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 25px;
 }
 
@@ -53,6 +65,7 @@ body {
     color: white;
     position: absolute;
     top: 20%;
+
 }
 
 /* about */
@@ -65,6 +78,14 @@ body {
     height: 220px;
 }
 
+/* Style buttons */
+#about .btn {
+    background-color: rgb(255, 192, 0);
+    color: black;
+    padding: 12px 30px;
+    cursor: pointer;
+    width: 80%;
+}
 
 .navbar-brand:hover,
 .nav-item:hover,
@@ -73,11 +94,15 @@ body {
 }
 
 /* skills */
-
 .skillsText img {
     width: 100%;
     height: 150px;
     object-fit: contain;
+}
+
+.skillsIcon {
+    font-size: 36px;
+    width: 100%;
 }
 
 .card-title {
@@ -88,15 +113,14 @@ body {
 /* portfolio */
 .portfolioContent {
     min-height: 380px;
-    padding: 0;
-    width: fit-content;
+    height: fit-content;
 }
 
 .portfolioContent img {
     width: 100%;
-    height: auto;
     object-fit: contain;
     min-height: 130px;
+
 }
 
 #portfolio p {
@@ -105,16 +129,16 @@ body {
 
 .portfolioContent p {
     width: 100%;
-    padding: 0;
-    margin: 5% 0;
 }
 
-
+.portfolioContent .btn {
+    background-color: rgb(255, 192, 0);
+    width: 100%;
+}
 
 /* contact */
 .contactColumn {
     color: white;
-
 }
 
 .contactColumn i {
@@ -123,39 +147,34 @@ body {
 
 .contactColumn a {
     color: white !important;
+
+
 }
 
-/* Style buttons */
-#about .btn {
-    background-color: rgb(255, 192, 0);
-    color: black;
-    padding: 12px 30px;
-    cursor: pointer;
-    width: 80%;
-}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 
-.portfolioContent .btn {
-    cursor: pointer;
-    color: black;
-    background-color: rgb(255, 192, 0);
-    width: 100%;
-}
+    #about,
+    #skills,
+    #contact,
+    #portfolio {
 
-@media (min-width: 700px) {
+        h1,
+        h2 {
+            font-size: 70px;
+        }
+    }
+
+    .bgimage img {
+        height: 600px;
+    }
+
     .hero-text {
-        top: 45%;
+        top: 30%;
     }
 
     .hero_title {
-        font-size: 30px;
-    }
-
-    #about p {
-        text-align: inherit;
-    }
-
-    .hero_title {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .hero_desc {
@@ -164,10 +183,15 @@ body {
 
     .card-title {
         font-size: 20px;
+
     }
 
     #about .imageAboutPage {
         width: 270px;
         height: 300px;
+    }
+
+    #about p {
+        font-size: 20px;
     }
 }
