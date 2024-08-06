@@ -93,8 +93,6 @@ body {
 }
 
 #about .imageAboutPage {
-    position: relative;
-    left: 23%;
     width: 200px;
     height: 220px;
 }
@@ -193,7 +191,6 @@ body {
     text-align: center;
 
 }
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
@@ -212,12 +209,16 @@ body {
         height: 700px;
     }
 
-    .hero-text {
-        top: 35%;
-    }
+
 
     #about p {
         text-align: inherit;
+    }
+
+    .hero-text {
+
+        top: 35%;
+
     }
 
     .hero_title {
@@ -234,12 +235,9 @@ body {
     }
 
     #about .imageAboutPage {
-        width: 100%;
-        margin: auto;
-        height: 100%;
-        position: inherit;
+        width: 260px;
+        height: 300px;
     }
-
 }
 
 /* Medium devices (tablets, 1000px and up) */

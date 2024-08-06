@@ -1,0 +1,14 @@
+[
+    {   
+        "image": [
+            {
+                "src": "images/backgroundHeader.webp",
+                "alt": "backgroundHeader",
+                "class": "backgroundimage",
+                "id": "bg1"
+            }
+        ],
+        "hero_title":"Salut, moi c'est Nathan",
+        "hero_desc": "Je suis développeur web testeur junior"
+    }
+]

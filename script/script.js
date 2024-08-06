@@ -1,9 +1,30 @@
 // Function to dynamically create HTML elements from the JSON file
+async function createHeroFromJSON() {
+    const container = document.querySelector("#home .container-fluid");
+    let row = document.createElement("div");
+    row.classList.add("row","align-item-center");
+
+    // Load the JSON file
+    await fetch("data/hero.json")
+        .then(response => response.json())
+        .then((data) => {
+            const heroInfo = data[0];
+            const heroImg = heroInfo.image[0];
+            row.innerHTML = `
+                <img src="${heroImg.src}" id="${heroImg.id}" class="${heroImg.class}" alt="${heroImg.alt}"/>
+                <div class="col mx-auto hero-text">
+                    <h1 class="hero_title">${heroInfo.hero_title}</h1>
+                    <p class="hero_desc">${heroInfo.hero_desc}</p>
+                </div>  
+            `;
+            container.appendChild(row)
+        });
+}
+// Function to dynamically create HTML elements from the JSON file
 async function createAboutFromJSON() {
     const container = document.querySelector("#about .container");
     let row = document.createElement("div");
-    row.classList.add("row");
-    row.classList.add("align-items-center");
+    row.classList.add("row", "align-items-center");
 
     // Load the JSON file
     await fetch("data/about.json")
@@ -13,7 +34,7 @@ async function createAboutFromJSON() {
             const img = info.image[0];
             row.innerHTML = `
             <div class="d-lg-flex row-lg mt-5"> 
-                <div class="mx-auto mb-5 col-lg-3 col-md-6 ">
+                <div class="col-lg-3 mx-auto d-flex justify-content-center mb-5">
                 <img src="${img.src}" id="${img.id}" class="${img.class}" alt="${img.alt}"/>
                 </div>
                 <div class="col-lg-1"></div>
@@ -42,7 +63,7 @@ async function createSkillsFromJSON() {
             // Iterate through the JSON data and create HTML elements
             data.forEach((item, index) => {
                 const card = document.createElement("div");
-                card.classList.add("d-lg-flex","align-item-center", "col-lg-4","mt-4");
+                card.classList.add("d-lg-flex", "align-item-center", "col-lg-4", "mt-4");
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
@@ -113,6 +134,7 @@ async function createPortfolioFromJSON() {
 }
 
 // Call the functions to execute the code
+createHeroFromJSON();
 createAboutFromJSON();
 createSkillsFromJSON();
 createPortfolioFromJSON();
