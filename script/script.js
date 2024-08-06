@@ -2,20 +2,20 @@
 async function createHeroFromJSON() {
     const container = document.querySelector("#home .container-fluid");
     let row = document.createElement("div");
-    row.classList.add("row","align-item-center");
+    row.classList.add("row", "align-item-center");
 
     // Load the JSON file
-    await fetch("data/hero.json")
+    await fetch("data/data.json")
         .then(response => response.json())
         .then((data) => {
-            const heroInfo = data[0];
-            const heroImg = heroInfo.image[0];
             row.innerHTML = `
-                <img src="${heroImg.src}" id="${heroImg.id}" class="${heroImg.class}" alt="${heroImg.alt}"/>
+           
+                <img src="${data[0].image}" alt="${data[0].alt}"/>
                 <div class="col mx-auto hero-text">
-                    <h1 class="hero_title">${heroInfo.hero_title}</h1>
-                    <p class="hero_desc">${heroInfo.hero_desc}</p>
+                    <h1 class="hero_title">${data[0].hero_title}</h1>
+                    <p class="hero_desc">${data[0].hero_desc}</p>
                 </div>  
+
             `;
             container.appendChild(row)
         });
@@ -27,22 +27,20 @@ async function createAboutFromJSON() {
     row.classList.add("row", "align-items-center");
 
     // Load the JSON file
-    await fetch("data/about.json")
+    await fetch("data/data.json")
         .then(response => response.json())
         .then((data) => {
-            const info = data[0];
-            const img = info.image[0];
             row.innerHTML = `
             <div class="d-lg-flex row-lg mt-5"> 
                 <div class="col-lg-3 mx-auto d-flex justify-content-center mb-5">
-                <img src="${img.src}" id="${img.id}" class="${img.class}" alt="${img.alt}"/>
+                <img src="${ data[1].image}" class="${data[1].class}" alt="${data[1].alt}"/>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-8">
-                    <p class="mb-5">${info.text}</p>
+                    <p class="mb-5">${data[1].text}</p>
                     <h3 class="text-center">Télécharger mon CV</h3>
                     <div class="d-flex justify-content-center">
-                        <a class="btn mt-5" href="${info.cv}" download><i class="fa fa-download"></i> Clique ici !</a>
+                        <a class="btn mt-5" href="${data[1].cv}" download><i class="fa fa-download"></i> Clique ici !</a>
                     </div>  
                 </div>
             </div>  
