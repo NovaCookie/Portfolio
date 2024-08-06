@@ -45,8 +45,7 @@ body {
 
 /* hero background image */
 .bgimage img {
-    height: 300px;
-    width: 100%;
+    /* height: 300px; */
 }
 
 /* text css above hero image*/
@@ -148,9 +147,9 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    .bgimage img {
+    /* .bgimage img {
         height: 550px;
-    }
+    } */
 
     #about p {
         text-align: inherit;
