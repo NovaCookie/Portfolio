@@ -25,7 +25,7 @@ body {
 #skills,
 #portfolio {
     h1 {
-        font-size: 50px;
+        font-size: 40px;
         color: rgb(255, 192, 0);
     }
 
@@ -62,8 +62,7 @@ body {
 
 /* hero background image */
 .bgimage img {
-    height: 290px;
-    min-height: 100px;
+    height: 300px;
     width: 100%;
     padding: 0px;
 }
@@ -86,26 +85,18 @@ body {
 /* about */
 #about {
     color: white;
-
-    p {
-        text-align: center;
-    }
-
-    .imageAboutPage {
-        width: 200px;
-        height: 220px;
-    }
-
-    .btn {
-        background-color: rgb(255, 192, 0);
-        color: black;
-        padding: 12px 30px;
-        cursor: pointer;
-        width: 80%;
-    }
 }
 
-/* Style buttons */
+#about p {
+    text-align: center;
+}
+
+#about .imageAboutPage {
+    width: 200px;
+    height: 220px;
+}
+
+
 .navbar-brand:hover,
 .nav-item:hover,
 .btn:hover {
@@ -113,6 +104,7 @@ body {
 }
 
 /* skills */
+
 .skillsText img {
     width: 100%;
     height: 150px;
@@ -141,27 +133,15 @@ body {
     min-height: 380px;
     height: fit-content;
     padding: 0;
+}
 
-    img {
-        width: 100%;
-        object-fit: contain;
-        width: 100%;
-        height: auto;
-        min-height: 130px;
-    }
+.portfolioContent img {
+    width: 100%;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    min-height: 130px;
 
-    p {
-        text-align: center;
-        width: 100%;
-        padding: 0;
-        margin: 5% 0;
-    }
-
-    .btn {
-        color: black;
-        background-color: rgb(255, 192, 0);
-        width: 100%;
-    }
 }
 
 #portfolio p {
@@ -169,21 +149,51 @@ body {
     width: 100%;
 }
 
+.portfolioContent p {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 5% 0;
+}
+
+
+
 /* contact */
 .contactColumn {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
-    i {
-        color: rgb(255, 192, 0);
+.contactColumn i {
+    color: rgb(255, 192, 0);
+}
 
-    }
+.contactColumn a {
+    color: white !important;
+    text-align: center;
 
-    a {
-        color: white !important;
-        text-align: center;
+}
+/* Style buttons */
+#about .btn {
+    background-color: rgb(255, 192, 0);
+    color: black;
+    padding: 12px 30px;
+    cursor: pointer;
+    width: 80%;
+}
+.portfolioContent .btn {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(255, 192, 0);
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .hero-text {
+
+        top: 20%;
 
     }
 }
@@ -191,31 +201,16 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    #about,
-    #skills,
-    #contact,
-    #portfolio {
-
-        h1,
-        h2 {
-            font-size: 40px;
-        }
-    }
-
     .bgimage img {
         height: 600px;
     }
-
-
 
     #about p {
         text-align: inherit;
     }
 
     .hero-text {
-
         top: 30%;
-
     }
 
     .hero_title {
@@ -228,11 +223,10 @@ body {
 
     .card-title {
         font-size: 20px;
-
     }
 
     #about .imageAboutPage {
-        width: 260px;
-        height: 300px;
+        width: 310px;
+        height: 340px;
     }
 }
