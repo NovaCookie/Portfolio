@@ -43,22 +43,17 @@ body {
     color: white !important;
 }
 
-/* hero background image */
-.bgimage img {
-    /* height: 300px; */
-}
-
 /* text css above hero image*/
-.hero_title {
-    font-weight: 800;
-    font-size: 25px;
-}
-
 .hero-text {
     color: white;
     position: absolute;
-    top: 20%;
 }
+
+.hero_title {
+    font-weight: 800;
+}
+
+
 
 /* about */
 #about {
@@ -117,7 +112,7 @@ body {
 /* contact */
 .contactColumn {
     color: white;
-  
+
 }
 
 .contactColumn i {
@@ -144,16 +139,43 @@ body {
     width: 100%;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-    /* .bgimage img {
-        height: 550px;
-    } */
-
-    #about p {
-        text-align: inherit;
+@media (min-width: 200px) {
+    .hero-text {
+        top: 15%;
     }
+    
+    .hero_title {
+        font-size: 20px;
+    }
+
+    .hero_desc {
+        font-size: 15px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 500px) {
+    .hero-text {
+        top: 20%;
+    }
+    .hero_title {
+        font-size: 30px;
+    }
+
+    .hero_desc {
+        font-size: 25px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 800px) {
 
     .hero-text {
         top: 30%;
@@ -175,4 +197,23 @@ body {
         width: 270px;
         height: 300px;
     }
+}
+
+@media (min-width: 1200px) {
+
+    .hero-text {
+        top: 50%;
+    }
+    .hero_title {
+        font-size: 50px;
+    }
+
+    .hero_desc {
+        font-size: 40px;
+    }
+
+    .card-title {
+        font-size: 25px;
+    }
+
 }
