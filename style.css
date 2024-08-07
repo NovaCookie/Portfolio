@@ -131,6 +131,24 @@ body {
     color: white !important;
 }
 
+@media (max-width:400px) {
+
+    .bgimage img {
+        height: 200px;
+    }
+
+    .hero-text {
+        top: 15%;
+    }
+    #about .imageAboutPage {
+        width: 200px;
+        height: 230px;
+    }
+    #about p{
+        text-align: center;
+    }
+}
+
 /* Medium devices (tablets, 700px and up) */
 @media (min-width: 700px) {
 
