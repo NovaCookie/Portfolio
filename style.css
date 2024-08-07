@@ -69,8 +69,7 @@ body {
 
 #about .imageAboutPage {
     width: 200px;
-    height: 250px;
-    min-height: 200px;
+    height: 230px;
 }
 
 /* Style buttons */
@@ -131,22 +130,32 @@ body {
     color: white !important;
 }
 
-@media (max-width:400px) {
+@media (min-width:100px) {
+    #about .imageAboutPage {
+        width: 150px;
+        height: 170px;
+    }
+    #about p {
+        text-align: center;
+    }
+}
+
+@media (min-width:450px) {
 
     .bgimage img {
-        height: 200px;
+        height: 180px;
     }
 
     .hero-text {
         top: 15%;
     }
+
     #about .imageAboutPage {
-        width: 200px;
-        height: 230px;
+        width: 190px;
+        height: 210px;
     }
-    #about p{
-        text-align: center;
-    }
+
+   
 }
 
 /* Medium devices (tablets, 700px and up) */
