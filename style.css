@@ -1,8 +1,4 @@
 /******* GENERAL *******/
-html {
-    font-size: 15px;
-}
-
 body {
     background-color: rgb(20, 19, 19) !important;
     font-family: "Inter", sans-serif !important;
@@ -49,10 +45,10 @@ body {
 
 /* hero background image */
 .bgimage img {
-    height: 300px;
+    height: 250px;
     width: 100%;
-    padding: 0px;
 }
+
 
 /* text css above hero image*/
 .hero_title {
@@ -64,7 +60,6 @@ body {
     color: white;
     position: absolute;
     top: 20%;
-
 }
 
 /* about */
@@ -74,7 +69,8 @@ body {
 
 #about .imageAboutPage {
     width: 200px;
-    height: 220px;
+    height: 250px;
+    min-height: 200px;
 }
 
 /* Style buttons */
@@ -113,7 +109,7 @@ body {
 
 }
 
-#portfolio p{
+#portfolio p {
     width: 100%;
 }
 
@@ -135,8 +131,8 @@ body {
     color: white !important;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Medium devices (tablets, 700px and up) */
+@media (min-width: 700px) {
 
     #about,
     #skills,
@@ -145,12 +141,14 @@ body {
 
         h1,
         h2 {
-            font-size: 70px;
+            font-size: 40px;
         }
     }
 
+
     .bgimage img {
-        height: 500px;
+        height: 400px;
+
     }
 
     .hero-text {
@@ -158,7 +156,7 @@ body {
     }
 
     .hero_title {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .hero_desc {
