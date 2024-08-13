@@ -1,5 +1,13 @@
 [
     {
+        "image": "Riding-Cities.webp",
+        "alt": "Riding Cities",
+        "title": "Riding Cities",
+        "text": "La page d'accueil d'une association faite en HTML & CSS, un petit projet pour débuter en développement",
+        "githubLink": "https://github.com/NovaCookie/Riding-Cities",
+        "aperçusLink": "https://novacookie.github.io/Riding-Cities/"
+    },
+    {
         "image": "Booki.webp",
         "alt": "Booki",
         "title": "Booki",
