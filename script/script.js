@@ -52,7 +52,7 @@ async function createPortfolioFromJSON() {
                     <div class="card portfolioContent">
                         <div class="card-body">
                             <img class="d-flex justify-content-center mx-auto" src="images/${item.image}" alt="${item.alt}">
-                            <h4 class="card-title text-center mt-3">${item.title}</h4>
+                            <h3 class="card-title text-center mt-3">${item.title}</h3>
                             <p class="card-text">${item.text}</p>
                         </div>   
                             <div class="card-footer">
