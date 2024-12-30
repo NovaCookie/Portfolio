@@ -1,0 +1,50 @@
+[
+    {
+        "image": "Riding-cities.webp",
+        "alt": "Riding Cities",
+        "title": "Riding Cities",
+        "text": "La page d'accueil d'une association faite en HTML & CSS, un petit projet pour débuter en développement",
+        "githubLink": "https://github.com/NovaCookie/Riding-Cities",
+        "aperçusLink": "https://novacookie.github.io/Riding-Cities/"
+    },
+    {
+        "image": "Booki.webp",
+        "alt": "Booki",
+        "title": "Booki",
+        "text": "La page d'accueil d'une agence de voyage faite en HTML & CSS, ce projet est responsif et fonctionne sur différentes tailles d'écran.",
+        "githubLink": "https://github.com/NovaCookie/Booki",
+        "aperçusLink": "https://novacookie.github.io/Booki/"
+    },
+    {
+        "image": "PrintIt.webp",
+        "alt": "PrintIt",
+        "title": "Print it!",
+        "text": "Création d'un carousel avec le langage JavaScript, un projet simple pour débuter dans ce langage.",
+        "githubLink": "https://github.com/NovaCookie/PrintIt",
+        "aperçusLink": "https://novacookie.github.io/PrintIt/"
+    },
+    {
+        "image": "Sophie.webp",
+        "alt": "Sophie",
+        "title": "Portfolio de Sophie",
+        "text": "Création d'une page web dynamique avec JavaScript, des requête API et de la modification du DOM.",
+        "githubLink": "https://github.com/NovaCookie/Sophie",
+        "aperçusLink": "https://github.com/NovaCookie/Sophie"
+    },
+    {
+        "image": "Kasa.webp",
+        "alt": "Kasa",
+        "title": "Kasa",
+        "text": "Application web de location immobilière avec uniquement la bibliothèque React et comportant des requêtes à une API",
+        "githubLink": "https://github.com/NovaCookie/Kasa",
+        "aperçusLink": "https://github.com/NovaCookie/Kasa"
+    },
+    {
+        "image": "AutomatisationTests.webp",
+        "alt": "AutomatisationTests",
+        "title": "Automatisation de tests",
+        "text": "Premiers pas sur l'automatisation de tests avec le framework Cypress et l'utilisation de docker pour lancer et tester un (faux) site web.",
+        "githubLink": "https://github.com/NovaCookie/EcoBlissBath",
+        "aperçusLink": "https://github.com/NovaCookie/EcoBlissBath"
+    }
+]

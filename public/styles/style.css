@@ -1,0 +1,199 @@
+/******* GENERAL *******/
+body {
+    background-color: rgb(20, 19, 19) !important;
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 15px !important;
+}
+
+/* spacing on all sections */
+#about,
+#skills,
+#projects {
+    h1 {
+        font-size: 50px;
+        color: rgb(255, 192, 0);
+    }
+
+    h2 {
+        font-size: 40px;
+        color: rgb(255, 192, 0);
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+}
+
+#contact {
+    h2 {
+        font-size: 30px;
+        color: white;
+    }
+}
+
+/* display background dark color on navbar scroll */
+.navbarScroll {
+    background-color: #5b5b5b;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+/* hero background image */
+.bgimage img {
+    height: 250px;
+    width: 100%;
+}
+
+
+/* text css above hero image*/
+.hero_title {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.hero-text {
+    color: white;
+    position: absolute;
+    top: 20%;
+}
+
+/* about */
+#about {
+    color: white;
+}
+
+#about .imageAboutPage {
+    width: 200px;
+    height: 230px;
+}
+
+/* Style buttons */
+#about .btn {
+    background-color: rgb(255, 192, 0);
+    color: black;
+    padding: 12px 30px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out, color 0.4s ease-in-out; 
+    color: #ffc107 !important; 
+}
+
+/* skills  */
+.skills img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+
+/* projects */
+.project {
+    min-height: 380px;
+    height: fit-content;
+}
+
+.project img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#projects p {
+    width: 100%;
+}
+
+.project .btn {
+    background-color: rgb(255, 192, 0);
+    width: 100%;
+}
+
+/* contact */
+.contactColumn {
+    color: white;
+}
+
+.contactColumn a {
+    color: white !important;
+}
+
+@media (min-width:100px) {
+    #about .imageAboutPage {
+        width: 150px;
+        height: 170px;
+    }
+
+    #about p {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media (min-width:450px) {
+
+    .bgimage img {
+        height: 180px;
+    }
+
+    .hero-text {
+        top: 15%;
+    }
+
+    #about .imageAboutPage {
+        width: 190px;
+        height: 210px;
+    }
+
+
+}
+
+/* Medium devices (tablets, 700px and up) */
+@media (min-width: 700px) {
+
+    #about,
+    #skills,
+    #contact,
+    #projects {
+
+        h1,
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .bgimage img {
+        height: 400px;
+
+    }
+
+    .hero-text {
+        top: 25%;
+    }
+
+    .hero_title {
+        font-size: 50px;
+    }
+
+    .hero_desc {
+        font-size: 30px;
+    }
+
+    #about .imageAboutPage {
+        width: 270px;
+        height: 300px;
+    }
+
+    #about p {
+        font-size: 20px;
+    }
+}
