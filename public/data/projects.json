@@ -29,7 +29,7 @@
         "title": "Portfolio de Sophie",
         "text": "Création d'une page web dynamique avec JavaScript, des requête API et de la modification du DOM.",
         "githubLink": "https://github.com/NovaCookie/Sophie",
-        "aperçusLink": "https://github.com/NovaCookie/Sophie"
+        "aperçusLink": null
     },
     {
         "image": "Kasa.webp",
@@ -37,7 +37,7 @@
         "title": "Kasa",
         "text": "Application web de location immobilière avec uniquement la bibliothèque React et comportant des requêtes à une API",
         "githubLink": "https://github.com/NovaCookie/Kasa",
-        "aperçusLink": "https://github.com/NovaCookie/Kasa"
+        "aperçusLink": null
     },
     {
         "image": "AutomatisationTests.webp",
@@ -45,6 +45,6 @@
         "title": "Automatisation de tests",
         "text": "Premiers pas sur l'automatisation de tests avec le framework Cypress et l'utilisation de docker pour lancer et tester un (faux) site web.",
         "githubLink": "https://github.com/NovaCookie/EcoBlissBath",
-        "aperçusLink": "https://github.com/NovaCookie/EcoBlissBath"
+        "aperçusLink": null
     }
 ]
