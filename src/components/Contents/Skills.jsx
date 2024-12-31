@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import SkillCard from './Cards/SkillCard';
+import SkillCard from './cards/SkillCard';
 
 export default function Skills() {
     const [skills, setSkills] = useState([]);

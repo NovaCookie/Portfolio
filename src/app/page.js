@@ -1,14 +1,10 @@
-import Content from "@/components/Content";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Accueil from "@/components/Accueil";
 
-
-export default function Home() {
-  return (
-    <div >
-      <Header/>
-      <Content/>
-      <Footer/>
-    </div>
-  );
+export default function Home(props) {
+    return (
+        <div>
+            <Accueil/>
+        </div>
+    );
 }
+

@@ -1,12 +1,12 @@
 "use client"; 
 
 import React, { useState, useEffect } from 'react';
-import About from './Contents/About';
-import Skills from './Contents/Skills';
-import Projects from './Contents/Projects';
+import About from './contents/About';
+import Skills from './contents/Skills';
+import Projects from './contents/Projects';
 import '../../public/styles/style.css';
 
-export default function Content(props) {
+export default function Accueil(props) {
   const [isAtBottom, setIsAtBottom] = useState(false);
 
   useEffect(() => {

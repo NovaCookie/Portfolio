@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import ProjectsCard from './Cards/ProjectsCard';
+import ProjectsCard from './cards/ProjectsCard';
 
 export default function Projects() {
     const [projects, setProjects] = useState([]);
