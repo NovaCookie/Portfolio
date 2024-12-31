@@ -11,6 +11,7 @@ export default function Header() {
         <Navbar expand="lg" className="bg-body-tertiary sticky-top" data-bs-theme="dark">
             <Container>
                 <NavbarBrand href="#home">Portfolio de Carteau Nathan</NavbarBrand>
+                <NavLink href="#bonus">Bonus</NavLink>
                 <NavbarToggle aria-controls="basic-navbar-nav" />
                 <NavbarCollapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
